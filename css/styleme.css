@@ -19,3 +19,8 @@ p, li{
     font-size: 18px;
     font-weight: lighter;
 }
+
+span {
+    font-weight: bold;
+    color: blueviolet;
+}
