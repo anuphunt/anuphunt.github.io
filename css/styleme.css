@@ -24,3 +24,16 @@ span {
     font-weight: bold;
     color: blueviolet;
 }
+
+.mood-box {
+    width: 60%;
+    overflow: hidden;
+}
+
+.mood-left {
+    float: left;
+}
+
+.mood-right {
+    float: right;
+}
