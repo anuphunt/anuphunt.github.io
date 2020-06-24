@@ -1,0 +1,83 @@
+
+/*Style sheet for the pie.html
+ Author: Anup Dhakal
+ Date: June 23, 2020
+ */
+
+
+body {
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond, sans-serif;
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18pt;
+    text-decoration: underline;
+    letter-spacing: 0.25em;
+}
+
+.header-main {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22pt;
+}
+
+a {
+    color: #A4A400;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black; /* If you want dots under the hoverable text */
+}
+
+/* changing list bullet icons to image */
+ li {
+     list-style-image: url("https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");
+ }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #A4A400;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.comment-box {
+    width: 80%;
+    margin: 20px 50px;
+    font-style: italic;
+}
+
+.quote {
+    background-color: #FFFFA8;
+}
+
+.footer {
+    float: right;
+}
