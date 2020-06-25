@@ -1,3 +1,8 @@
+/*Author: Anup Dhakal*/
+/*Date: June 24, 2020*/
+/*Description: CSS for tmnt.html for W1D3 Assignment*/
+
+
 body {
     background-image: url("../images/background.png");
     font-family: Verdana, Tahoma, sans-serif;
@@ -90,12 +95,14 @@ p, div, img {
 }
 .review-image {
     float: left;
+    margin-right: 5px;
 }
 
 .review-count{
     text-align: center;
     background-color: #A2B964;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 16px;
+    padding: 5px;
     clear: both;
 }
 
@@ -103,6 +110,7 @@ p, div, img {
     width: 240px;
     display:table-cell;
     background-color: #A2B964;
+    border-top-right-radius: 16px;
 }
 
 .movie-info img {
@@ -135,4 +143,5 @@ p, div, img {
 }
 .validators {
     float: right;
+    opacity: 50%;
 }
