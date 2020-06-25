@@ -111,6 +111,23 @@ p, div, img {
     font-family: Arial, sans-serif;
 }
 
+.movie-info dl{
+    margin-left: 10pt;
+}
+
+.movie-info dl dt{
+    font-weight: bold;
+}
+
+.movie-info dl dd {
+    margin-bottom: 10px;
+}
+
+.movie-info li {
+    list-style-type: none;
+    margin-left: -32px;
+}
+
 .col {
     display:table-cell;
     margin: 0;
