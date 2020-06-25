@@ -102,6 +102,7 @@ p, div, img {
     text-align: center;
     background-color: #A2B964;
     border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     padding: 5px;
     clear: both;
 }
