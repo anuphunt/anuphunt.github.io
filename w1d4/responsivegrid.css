@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    background: #313131;
+    max-height: 600px;
+    font-family: Tahoma Verdana sans-serif;
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: 80px 50px 300px 80px;
+}
+
+
+#header, #footer{
+    background-color: aqua;
+    height: 80px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    background-color: darkgreen;
+}
+
+#navbar {
+    background-color: darkgreen;
+}
+
+#flex-nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+
+
+@media screen and (min-width: 600px){
+    #columns > .box-content {
+        display: flex;
+    }
+    #col1 {
+        flex: 1;
+        order: 1;
+    }
+    #col2 {
+        flex: 2;
+        order:2;
+    }
+    #col3{
+        flex: 1;
+        order:3;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    #grid {
+        display: grid;
+        grid-template-rows: 80px 50px 600px 80px;
+    }
+
+    #columns > .box-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #col1 {
+        width: 300px;
+        order: 1;
+    }
+    #col2 {
+        width: 600px;
+        order:3;
+    }
+    #col3{
+        width: 300px;
+        order:2;
+    }
+
+}
+
+.col {
+    height: 300px;
+}
+
+#col1{
+    background-color: lightblue;
+}
+
+#col3{
+    background-color: #A4A400;
+}
+
+#col2{
+    background-color: lightgray;
+}
+
+#flex-nav li {
+    border: 2px solid black;
+    height: 50px;
+    padding: 12px 20px;
+}
+
+#columns {
+    background-color: lightgray;
+}
