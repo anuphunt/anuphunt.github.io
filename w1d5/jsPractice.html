@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script Practice</title>
+
+    <script src = "jsPractice.js"></script>
+    <script>
+
+
+        // /* runs test to see if expected argument is === to value returned by function2test argument */
+        function myFunctionTest(expected, found) {
+            if (expected === found) {
+                return "TEST SUCCEEDED";
+            } else {
+                return "TEST FAILED.  Expected " + expected + " found " + found;
+            }
+        }
+        console.log("Expected output of max(20,10) is 20  " + myFunctionTest(20, max(20, 10)));
+        console.log("Expected output of maxOfThree(5,4,44) is 44  " + myFunctionTest(44, maxOfThree(5, 4, 44)));
+        console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55, maxOfThree(55, 4, 44)));
+        console.log("Expected output of isVowel('s') is false " + myFunctionTest(false, isVowel('s')));
+        console.log("Expected output of isVowel('a') is true " + myFunctionTest(true, isVowel('a')));
+        console.log("Expected output of sum([1,2,3,4]) is 10 " + myFunctionTest(10, sum([1,2,3,4])));
+        console.log("Expected output of sum([1,2,3,10]) is 16 " + myFunctionTest(16, sum([1,2,3,10])));
+        console.log("Expected output of multiply([1,2,3,4]) is 24 " + myFunctionTest(24, multiply([1,2,3,4])));
+        console.log("Expected output of multiply([1,2,3,4, 10]) is 240 " + myFunctionTest(240, multiply([1,2,3,4,10])));
+        console.log("Expected output of reverse('jag testar') 'ratset gaj' is  " + myFunctionTest('ratset gaj', reverse('jag testar')));
+        console.log("Expected output of reverse('hello') is 'olleh'  " + myFunctionTest('olleh', reverse('hello')));
+        console.log("Expected output of findLongestWord(['hello', '2020'])  is 'hello' " + myFunctionTest('hello', findLongestWord(['hello', '2020'])));
+        console.log("Expected output of findLongestWord(['apple', 'banana', 'mango', 'strawberry'])  is 'hello' " + myFunctionTest('strawberry', findLongestWord(['apple', 'banana', 'mango', 'strawberry'])));
+        console.log("Expected output of filterLongWords(['apple', 'banana', 'strawberry', 'kiwi'], 4)  is 'apple,banana,strawberry' " + myFunctionTest('apple,banana,strawberry', filterLongWords(['apple', 'banana', 'strawberry', 'kiwi'], 4).toString()));
+        console.log("JSFIDDLE MODIFICATION: Expected output of multiplyBy10([1,3,5,3,3])  is '10,30,50,30,30 " + myFunctionTest('10,30,50,30,30', multiplyBy10([1,3,5,3,3]).toString()));
+        console.log("JSFIDDLE MODIFICATION: Expected output of allElemsEqualTo3([1,3,5,3,3])  is '3,3,3' " + myFunctionTest('3,3,3', allElemsEqualTo3([1,3,5,3,3]).toString()));
+        console.log("JSFIDDLE MODIFICATION: Expected output of productOfAllElements([1,3,5,3,3])  is '135' " + myFunctionTest(135, productOfAllElements([1,3,5,3,3])));
+    </script>
+</head>
+<body>
+
+Look in the Chrome developer console to see the output. CTRL_SHIFT_J <br />
+Or on Firefox with CTRL_SHIFT_K
+
+</body>
+</html>
