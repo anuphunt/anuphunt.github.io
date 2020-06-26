@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+.heading{
+    background-color: aqua;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.menu {
+    background-color: darkgreen;
+    overflow: hidden;
+}
+
+.menu a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.col1{
+    background-color: gray;
+    padding-bottom: 250px;
+}
+.col2{
+    background-color: darkgray;
+    padding-bottom: 250px;
+}
+.col3{
+    background-color: #A4A400;
+    padding-bottom: 250px;
+}
+
+.footer {
+    background-color: darkgreen;
+    padding: 16px 0;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
