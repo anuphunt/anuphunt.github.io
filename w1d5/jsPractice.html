@@ -34,6 +34,20 @@
         console.log("JSFIDDLE MODIFICATION: Expected output of multiplyBy10([1,3,5,3,3])  is '10,30,50,30,30 " + myFunctionTest('10,30,50,30,30', multiplyBy10([1,3,5,3,3]).toString()));
         console.log("JSFIDDLE MODIFICATION: Expected output of allElemsEqualTo3([1,3,5,3,3])  is '3,3,3' " + myFunctionTest('3,3,3', allElemsEqualTo3([1,3,5,3,3]).toString()));
         console.log("JSFIDDLE MODIFICATION: Expected output of productOfAllElements([1,3,5,3,3])  is '135' " + myFunctionTest(135, productOfAllElements([1,3,5,3,3])));
+
+        console.assert(max(20,10)===20);
+        console.assert(maxOfThree(5,4,44)===44);
+        console.assert(isVowel('s') === false);
+        console.assert(sum([1,2,3,4]) === 10);
+        console.assert(multiply([1,2,3,4]) === 24);
+        console.assert(reverse('jag testar') === 'ratset gaj');
+        console.assert(findLongestWord(['hello', '2020']) === 5);
+        console.assert(filterLongWords(['apple', 'banana', 'strawberry', 'kiwi'], 4).toString() === 'apple,banana,strawberry');
+        console.assert(multiplyBy10([1,3,5,3,3]).toString() === '10,30,50,30,30');
+        console.assert(allElemsEqualTo3([1,3,5,3,3]).toString() === '3,3,3');
+        console.assert(productOfAllElements([1,3,5,3,3]) === 135);
+
+
     </script>
 </head>
 <body>
