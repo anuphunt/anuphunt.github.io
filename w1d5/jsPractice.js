@@ -4,7 +4,6 @@
  */
 
     //1. Define a function max() that takes two numbers as arguments and returns the alrgest of them. Use the if-then-else construct available in Javascript.
-
     function max(a, b){
         if(a>b){
             return a;
@@ -32,7 +31,6 @@
     }
 
     //4. Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply ([1,2,3,4]) should return 24.
-
     function sum(arr) {
         return arr.reduce((a,b)=> a+b, 0);
     }
@@ -58,7 +56,7 @@
                 longestWord = arr[i];
             }
         }
-        return longestWord;
+        return longestWord.length;
     }
 
     //7. Write a function filterLongWords() that takes an array of words and an integer i and returns the array of rowrds that are longer than i.
@@ -76,7 +74,6 @@
         //a) multiply each element by 10;
         //b) return array with all elements equal to 3;
         //c) return the product of all elements;
-
     function multiplyBy10(arr){
         return arr.map(function(elem, i, array){ return elem*10;});
     }
