@@ -91,12 +91,19 @@ describe("Bank Tests", function(){
         bank.addAccount();
         bank.addAccount();
 
-        bank.getAccounts().forEach(acc => {
-            console.log(acc.getNumber());
-        });
-
         assert.equal(3, bank.getAccounts().length);
         assert.equal(2, bank.closeAccount(bank.getAccounts()[0].getNumber()));
         assert.equal(2, bank.getAccounts().length);
     });
+
+    it("creates an account report of all accounts in new line. ", function(){
+        let bank1 = new Bank();
+        bank1.addAccount();
+        bank1.addCheckingAccount(100);
+        bank1.addSavingsAccount(200);
+
+        assert.equal("Account 7: balance 0\n" +
+            "Account 8: balance 0, Overdraft 100\n" +
+            "Account 9: balance 0, Interest 200", bank1.accountReport());
+    })
 });

@@ -10,21 +10,24 @@ class Bank {
     }
 
     addAccount(){
-        this._accounts.push(new Account(Bank.nextAccountNumber));
+        let acc = new Account(Bank.nextAccountNumber);
+        this._accounts.push(acc);
         Bank.nextAccountNumber++;
-        return this._accounts.length;
+        return acc.getNumber();
     }
 
     addSavingsAccount(interest){
-        this._accounts.push(new SavingsAccount(Bank.nextAccountNumber, interest));
+        let acc = new SavingsAccount(Bank.nextAccountNumber, interest);
+        this._accounts.push(acc);
         Bank.nextAccountNumber++;
-        return this._accounts.length;
+        return acc.getNumber();
     }
 
     addCheckingAccount(overdraft){
-        this._accounts.push(new CheckingAccount(Bank.nextAccountNumber, overdraft));
+        let acc = new CheckingAccount(Bank.nextAccountNumber, overdraft);
+        this._accounts.push(acc);
         Bank.nextAccountNumber++;
-        return this._accounts.length;
+        return acc.getNumber();
     }
 
     closeAccount(number){
@@ -34,9 +37,9 @@ class Bank {
 
     accountReport()
     {
-        for(let acc in this._accounts){
-            acc.toString();
-        }
+        let result = this._accounts.map(acc => acc.toString())
+            .reduce((accum, currentStr) => accum + currentStr + "\n", "");
+        return result;
     }
 }
 Bank.nextAccountNumber = 1;
