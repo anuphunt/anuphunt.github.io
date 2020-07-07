@@ -37,9 +37,13 @@ class Bank {
 
     accountReport()
     {
-        let result = this._accounts.map(acc => acc.toString())
+        return this._accounts.map(acc => acc.toString())
             .reduce((accum, currentStr) => accum + currentStr + "\n", "");
-        return result;
+    }
+
+    endOfMonth(){
+      return  this._accounts.map(acc => acc.endOfMonth())
+            .reduce((accum,currentStr) => accum + currentStr + "\n", "");
     }
 }
 Bank.nextAccountNumber = 1;

@@ -102,8 +102,24 @@ describe("Bank Tests", function(){
         bank1.addCheckingAccount(100);
         bank1.addSavingsAccount(200);
 
-        assert.equal("Account 7: balance 0\n" +
-            "Account 8: balance 0, Overdraft 100\n" +
-            "Account 9: balance 0, Interest 200", bank1.accountReport());
-    })
+        assert.equal("Account 7: balance 0\nAccount 8: balance 0, Overdraft 100\nAccount 9: balance 0, Interest 200\n", bank1.accountReport());
+    });
 });
+
+describe("End of month test", function(){
+    it("returns expected output when calling endOfMonth() on each account", function(){
+       let bank2 = new Bank();
+       bank2.addAccount();
+       bank2.addSavingsAccount(25);
+       bank2.getAccounts()[1].deposit(100);
+
+       bank2.addCheckingAccount(100);
+       bank2.getAccounts()[2].withdraw(50);
+
+       assert.equal("\nInterest added Savings Account: 11 balance: 125 interest: 25\nWarning, low balance CheckinAccount 12: balance: -50 overdraft limit: 100\n", bank2.endOfMonth());
+    });
+});
+
+
+
+
