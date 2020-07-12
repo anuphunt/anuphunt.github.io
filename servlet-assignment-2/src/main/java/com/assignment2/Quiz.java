@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Quiz {
-
+    public String name = "Anup";
     private int correctAnswers;
     private Integer currentQuestion;
     private Map<Integer, Integer> questionAnswerMap;

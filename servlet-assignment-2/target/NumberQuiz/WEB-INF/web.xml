@@ -4,14 +4,4 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-
-<!--  <servlet>-->
-<!--    <servlet-name>quizViewServlet</servlet-name>-->
-<!--    <servlet-class>com.assignment2.servlets.QuizViewServlet</servlet-class>-->
-<!--  </servlet>-->
-
-<!--  <servlet-mapping>-->
-<!--    <servlet-name>quizViewServlet</servlet-name>-->
-<!--    <url-pattern>/quizview</url-pattern>-->
-<!--  </servlet-mapping>-->
 </web-app>
